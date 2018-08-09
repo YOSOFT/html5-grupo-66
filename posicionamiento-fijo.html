@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Posicionamiento absoluto</title>
+    <style>
+        body{
+            height: 3000px;
+            background: #ccc;        }
+        .caja{
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+        .roja{
+            background-color: tomato;
+            position: fixed;
+            bottom: 20px;
+            /* top:40px; */
+            right: 30px;
+            left: 40px;
+        }
+        .azul{
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="caja roja"></div>
+    <div class="caja azul"></div>
+</body>
+</html>

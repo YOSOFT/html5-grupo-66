@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selectores</title>
+    <style>
+        div , p, h1 {
+            color: green;
+        }
+
+        div + p {
+          color: blueviolet;  
+        }
+        /* p {
+            color: red;
+        } */
+        h1[data-valor="uno"] {
+            color: yellow;
+        }
+       
+       h1:hover{
+            transform: scale(1.3);
+       }
+        
+    </style>
+</head>
+<body>
+    <h1>Encabezado sin atributo</h1>
+    <h1 data-valor="uno">Encabezado</h1>
+    <h1 data-valor="dos">Encabezado 2</h1>
+    <p>Texto 0</p>
+    <p class="parrafo">Texto 1</p>
+    <p id="post">Texto 1</p>
+    <div>
+        <div></div>
+        <p>texto 2</p>
+        <div>
+            <a href=""><p>texto 3</p>
+            </a>     
+        </div>
+        <p>texto 4</p>
+        <p>texto 5</p>
+    </div>
+</body>
+</html>
